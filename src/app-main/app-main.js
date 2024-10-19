@@ -1,20 +1,23 @@
 import './app-main.css';
 
-import {Component} from "react";
+import React, {Component} from "react";
 
-import {Col, Row} from "antd";
+import {Row} from "antd";
+import MovieCard from "../movie-card";
 
 export default class AppMain extends Component {
 
     render() {
         const content = this.props.content;
         console.log(content);
+        console.log('poster_path');
         return (
-            <Row gutter={[32, 32]}>
-                {content.map( (item) => {
-                        return <Col key={item.id} span={12}>{item['original_title']}</Col>
-                    })
-                }
+            <Row>
+                {content.map((item) => {
+                    return <MovieCard
+                        item={item}
+                    />
+                })}
             </Row>
         );
     }

@@ -1,0 +1,21 @@
+.movie-main-card {
+    min-height: 279px;
+    width: 50%;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.movie-card {
+    box-shadow: #e3e3e3 5px 5px 5px;
+}
+
+.movie-card-genre{
+    margin: 10px 0;
+}
+
+.movie-main-card-left {
+}
+
+.movie-main-card-right {
+    padding: 0 20px;
+}

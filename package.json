@@ -36,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "date-fns": "^4.1.0",
+    "eslint-plugin-react-hooks": "^5.0.0"
   }
 }
