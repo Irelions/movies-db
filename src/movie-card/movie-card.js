@@ -1,9 +1,18 @@
 import './movie-card.css';
 import {format} from 'date-fns';
 import {Component} from "react";
-import {Col, Flex, Image, Row, Typography} from 'antd';
+import {Col, Flex, Image, Row, Spin, Typography} from 'antd';
 
 export default class MovieCard extends Component {
+
+    state = {
+        isLoad: true
+    }
+
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         const {Text, Title, Paragraph} = Typography;
         const genre_ids = ['Action', 'Drama']
